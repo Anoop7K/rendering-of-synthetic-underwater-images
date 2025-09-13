@@ -1,0 +1,11 @@
+groundtruth_dir: "./datasets/groundTruth"
+jerlov_dir: "./datasets/inputJerlov"
+input_dir: "./datasets/input"
+csv_file: "./datasets/dataset.csv"
+results_dir: "./results"
+
+epochs: 200
+batch_size: 4
+lr: 0.0002
+lambda_L1: 100
+save_freq: 10
