@@ -7,13 +7,13 @@ The dataset uses a CSV-based mapping system to maintain alignment between image 
 
 File Mapping: A CSV file contains the filenames that map corresponding images across all three directories
 
-Image Directories:
+**Image Directories**:
 
-input/: Contains target underwater images
+**input/:** Contains target underwater images
 
-inputJerlov/: Contains Jerlov water type conditioning maps
+**inputJerlov/:** Contains Jerlov water type conditioning maps
 
-groundTruth/: Contains clean ground truth images
+**groundTruth/:** Contains clean ground truth images
 
 **Note**: The actual image data is confidential and not included in this repository. The CSV file ensures proper alignment between the corresponding images across these directories without exposing the sensitive data.
 
