@@ -48,7 +48,8 @@ Generate synthetic underwater images using a trained model:
 ```bash
 python inference.py --model_path results/v1/Final_Model.pth \
                    --input datasets/groundTruth/sample.png \
-                   --jerlov datasets/inputJerlov/sample.png
+                   --jerlov datasets/inputJerlov/sample.png \
+                   --output results/v1/samples/generated_image.png
 ```
 
 Generated outputs are saved in the results directory with appropriate timestamps.
