@@ -54,6 +54,23 @@ python inference.py --model_path results/v1/Final_Model.pth \
 
 Generated outputs are saved in the results directory with appropriate timestamps.
 
+## 📈 Evaluation
+
+Compute quantitative metrics for a trained generator against the dataset's real underwater images:
+
+```bash
+python evaluate.py --generator results/checkpoints/G_epoch200.pth \
+                    --discriminator results/checkpoints/D_epoch200.pth
+```
+
+Reports and saves (as JSON):
+- **PSNR** – pixel-level fidelity to the target underwater image
+- **SSIM** – structural similarity
+- **L1 / MAE** – the same pixel loss used during training
+- **Perceptual loss** – VGG16 feature-space distance
+- **Adversarial loss** – how well the generator fools the discriminator (requires `--discriminator`)
+- **Discriminator loss & accuracy** – how well D separates real from fake (requires `--discriminator`)
+
 ## 🧠 Model Architecture
 
 The implementation uses:
